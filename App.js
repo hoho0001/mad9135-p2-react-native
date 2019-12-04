@@ -1,7 +1,7 @@
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 
-import Home from './screens/Home.hooks.js'
+import Home from './screens/Home.js'
 import BusinessDetails from './screens/BusinessDetails'
 
 // See docs https://reactnavigation.org/docs/en/stack-navigator.html

@@ -53,7 +53,7 @@ const loadData = async () => {
     .then(data => {
       // Added setTimeout here only to simulate a slow loading API.
       // This will let us see the spinner.
-      console.log(data)
+      // console.log(data)
       setTimeout(() => {
         setBusinessList(data.businesses)
         setIsLoading(false)
