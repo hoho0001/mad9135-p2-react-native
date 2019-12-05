@@ -2,8 +2,9 @@ import React from 'react'
 import {ListItem, Body, Text, Right, Button, Icon } from 'native-base'
 import { withNavigation } from 'react-navigation'
 
-// Destructure the movie object and the navigate function from props.
+// Destructure the business object and the navigate function from props.
 const BusinessListItem = ({ business, navigation: { navigate } }) => (
+  
   <ListItem>
     <Body>
       <Text style={{fontSize: 20}}>
@@ -16,8 +17,7 @@ const BusinessListItem = ({ business, navigation: { navigate } }) => (
     <Right>
       <Button 
         transparent
-        onPress={() => navigate('BusinessDetail', { business })}
-      > 
+        onPress={() => navigate('BusinessDetail', { business })} > 
         <Icon name="arrow-forward" />
       </Button>
     </Right>
