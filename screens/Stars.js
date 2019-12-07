@@ -8,8 +8,7 @@ export default function Stars (props) {
     let stars = JSON.parse(props.rating)
  
     return (
-        
-        <Container>
+
             <StarRating
                 disabled={true}
                 emptyStar={'ios-star-outline'}
@@ -18,11 +17,11 @@ export default function Stars (props) {
                 iconSet={'Ionicons'}
                 maxStars={5}
                 rating={stars}
-                fullStarColor={'orange'}
+                fullStarColor={'black'}
 
             />
 
-        </Container>
+
 
     );
 

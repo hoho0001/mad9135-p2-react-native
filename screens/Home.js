@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <Container>
       <Content>
-        <Button onPress={() => {
+        <Button  style={{backgroundColor: "#E24D37"}} onPress={() => {
           setIsLoading(true)
           loadData()
         }}>
