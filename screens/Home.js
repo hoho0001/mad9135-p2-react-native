@@ -82,7 +82,7 @@ export default function Home() {
           setIsLoading(true)
           loadData()
         }}>
-          <Text>Get the businesses...</Text>
+          <Text>Load businesses...</Text>
         </Button>
         <FlatList
           data={businessList}
