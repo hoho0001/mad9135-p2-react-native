@@ -9,6 +9,7 @@ export default function Home() {
   const [businessList, setBusinessList] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [where, setWhere] = useState({})
+  
   // lat: 37.786882, lng:-122.399972
   const loadLocation = () => {
     let geoOptions = {
