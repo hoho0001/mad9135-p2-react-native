@@ -13,29 +13,6 @@ export default class BusinessDetails extends Component {
 
   render() {
     const business = this.props.navigation.getParam('business')
-    // console.log(business)
-  
-
-//    var Image = <Image
-//   //  style={{width: 300, height: 200, marginBottom: 24}}
-//   //  source={require('../assets/yelpLogo.png')}
-//  />
-
-//  let busPic = ""
-//  if(business.image_url === "") {
-//    Image.source = require('../assets/yelpLogo.png')
-//    Image.sytle = {width: 300, height: 200, marginBottom: 24}
-//  } else {
-//    Image.source = {Uri: business.image_url}
-//    Image.sytle = {width: 300, height: 200, marginBottom: 24}
-//  }
-
-    // (business.image_url === "")
-    // ? icon = (require('../assets/yelpLogo.png'))
-    // : icon = {uri: business.image_url}
-
-
-
     return (
       <Container >
         <Content style={s.container} >
@@ -67,7 +44,7 @@ export default class BusinessDetails extends Component {
 const s = StyleSheet.create({
 
   container: { flex: 1, padding: 24, fontSize: 20,backgroundColor: '#D9232D', color: 'white', alignContent:"center" }, 
-  name: { fontSize: 26, fontWeight: '600', marginBottom:24, alignSelf: "center"},
+  name: { fontSize: 30, fontWeight: '600', marginBottom:24, alignSelf: "center", color: 'white'},
   // phone: { marginTop: 12, color: 'white', marginBottom: 12 },
   address: { marginTop: 10, color:'white', fontSize: 18, marginBottom:10, fontWeight: '600'  },
 
