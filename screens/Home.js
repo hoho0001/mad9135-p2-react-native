@@ -84,7 +84,7 @@ export default function Home() {
           setIsLoading(true)
           loadData()
         }}>
-          <Text>Click here to find restaurants</Text>
+          <Text>Click here to find nearby restaurants</Text>
         </Button>
         <FlatList
           data={businessList}
