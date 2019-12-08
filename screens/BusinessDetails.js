@@ -48,6 +48,6 @@ const s = StyleSheet.create({
   // phone: { marginTop: 12, color: 'white', marginBottom: 12 },
   address: { marginTop: 10, color:'#000', fontSize: 18, marginBottom:10, fontWeight: '600'  },
 
-  stars: {margin: 24, padding: 16, alignSelf: "center", alignContent:"center", alignItems: "center"}
+  stars: {marginRight: 24, padding: 16, alignSelf: "center", }
 
 })

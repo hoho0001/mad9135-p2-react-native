@@ -18,6 +18,7 @@ export default function Stars (props) {
                 maxStars={5}
                 rating={stars}
                 fullStarColor={'black'}
+                starSize = {24}
 
             />
 
