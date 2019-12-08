@@ -18,7 +18,7 @@ export default class BusinessDetails extends Component {
         <Content style={s.container} >
           <Text style={s.name}>{business.name}</Text>
           <Image
-            style={{flex: 1, width: 300, height: 200, alignSelf: "center", marginBottom: 20}}
+            style={{flex: 1, width: 300, height: 200, alignSelf: "center", marginBottom: 20, borderRadius: 100, overflow: "hidden"}}
             source={ business.image_url === ""
               ? require('../assets/yelpLogo.png')                      
               : {uri: business.image_url}
@@ -43,10 +43,10 @@ export default class BusinessDetails extends Component {
 
 const s = StyleSheet.create({
 
-  container: { flex: 1, padding: 24, fontSize: 20,backgroundColor: '#D9232D', color: 'white', alignContent:"center" }, 
-  name: { fontSize: 30, fontWeight: '600', marginBottom:24, alignSelf: "center", color: 'white'},
+  container: { flex: 1, padding: 24, fontSize: 20,backgroundColor: '#ffffff', color: '#000000', alignContent:"center" }, 
+  name: { fontSize: 30, fontWeight: '600', marginBottom:24, alignSelf: "center", color: '#000'},
   // phone: { marginTop: 12, color: 'white', marginBottom: 12 },
-  address: { marginTop: 10, color:'white', fontSize: 18, marginBottom:10, fontWeight: '600'  },
+  address: { marginTop: 10, color:'#000', fontSize: 18, marginBottom:10, fontWeight: '600'  },
 
   stars: {margin: 24, padding: 16, alignSelf: "center", alignContent:"center", alignItems: "center"}
 
