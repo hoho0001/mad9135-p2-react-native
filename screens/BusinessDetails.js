@@ -44,7 +44,7 @@ export default class BusinessDetails extends Component {
 const s = StyleSheet.create({
 
   container: { flex: 1, padding: 24, fontSize: 20,backgroundColor: '#ffffff', color: '#000000', alignContent:"center" }, 
-  name: { fontSize: 30, fontWeight: '600', marginBottom:24, alignSelf: "center", color: '#000'},
+  name: { fontSize: 30, fontWeight: '600', marginBottom:24, alignSelf: "center", color: 'blue'},
   // phone: { marginTop: 12, color: 'white', marginBottom: 12 },
   address: { marginTop: 10, color:'#000', fontSize: 18, marginBottom:10, fontWeight: '600'  },
 

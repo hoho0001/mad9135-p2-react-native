@@ -79,11 +79,12 @@ export default function Home() {
   return (
     <Container>
       <Content>
-        <Button  style={{backgroundColor: "#E24D37"}} onPress={() => {
+        <Button  style={{marginTop: 24, marginBottom: 24, backgroundColor: "blue", alignSelf: 'center', alignItems: 'center'}} onPress={() => {
+          
           setIsLoading(true)
           loadData()
         }}>
-          <Text>Load businesses...</Text>
+          <Text>Click here to find restaurants</Text>
         </Button>
         <FlatList
           data={businessList}

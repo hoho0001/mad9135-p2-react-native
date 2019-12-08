@@ -1,15 +1,15 @@
 import React from 'react'
-import {ListItem, Body, Text, Right, Button, Icon, Left } from 'native-base'
+import {ListItem, Body, Text, Right, Button, Icon, Left, Thumbnail } from 'native-base'
 import { withNavigation } from 'react-navigation'
 import {Image} from 'react-native'
 
 // Destructure the business object and the navigate function from props.
 const BusinessListItem = ({ business, navigation: { navigate } }) => (
   
-  <ListItem>
+  <ListItem avatar> 
         <Left>
-    <Image
-    style={{width: 70, height: 70}}
+    <Thumbnail 
+    // style={{width: 70, height: 70}}
     source = {require('../assets/yelpLogo.png')}
     />
     </Left>
