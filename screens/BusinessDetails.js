@@ -41,16 +41,15 @@ export default class BusinessDetails extends Component {
         <Content style={s.container} >
           <Text style={s.name}>{business.name}</Text>
           <Image
-            style={{width: 300, height: 200, marginBottom: 24}}
-            // source={require('../assets/yelpLogo.png')}
+            style={{flex: 1, width: 300, height: 200, alignSelf: "center", marginBottom: 20}}
             source={ business.image_url === ""
-              ? require('../assets/yelpLogo.png')                      // Use object with 'uri'
+              ? require('../assets/yelpLogo.png')                      
               : {uri: business.image_url}
 
             }
           />
           <Stars style={s.stars} rating={business.rating}/>     
-          <Text style={s.address}>Street Address: {business.location.address1}</Text>
+          <Text style={s.address}>Address: {business.location.address1}</Text>
           <Text style={s.address}>City: {business.location.city}</Text>
           <Text style={s.address}>State/Province: {business.location.state}</Text>
           <Text style={s.address}>Country: {business.location.country}</Text>
@@ -67,11 +66,11 @@ export default class BusinessDetails extends Component {
 
 const s = StyleSheet.create({
 
-  container: { flex: 1, padding: 24, fontSize: 20,backgroundColor: '#D9232D', color: 'white', alignContent:"center"}, 
-  name: { fontSize: 26, fontWeight: '600', marginBottom:24},
+  container: { flex: 1, padding: 24, fontSize: 20,backgroundColor: '#D9232D', color: 'white', alignContent:"center" }, 
+  name: { fontSize: 26, fontWeight: '600', marginBottom:24, alignSelf: "center"},
   // phone: { marginTop: 12, color: 'white', marginBottom: 12 },
-  address: { marginTop: 12, color:'white', fontSize: 18, marginBottom:12, fontWeight: '600'  },
-  // distance: {marginBottom: 12 , marginTop: 12},
-  stars: {margin: 24, maxWidth:300, padding: 16}
+  address: { marginTop: 10, color:'white', fontSize: 18, marginBottom:10, fontWeight: '600'  },
+
+  stars: {margin: 24, padding: 16, alignSelf: "center", alignContent:"center", alignItems: "center"}
 
 })

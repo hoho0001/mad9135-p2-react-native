@@ -1,11 +1,18 @@
 import React from 'react'
-import {ListItem, Body, Text, Right, Button, Icon } from 'native-base'
+import {ListItem, Body, Text, Right, Button, Icon, Left } from 'native-base'
 import { withNavigation } from 'react-navigation'
+import {Image} from 'react-native'
 
 // Destructure the business object and the navigate function from props.
 const BusinessListItem = ({ business, navigation: { navigate } }) => (
   
   <ListItem>
+        <Left>
+    <Image
+    style={{width: 70, height: 70}}
+    source = {require('../assets/yelpLogo.png')}
+    />
+    </Left>
     <Body>
       <Text style={{fontSize: 20}}>
         {business.name}
@@ -21,6 +28,7 @@ const BusinessListItem = ({ business, navigation: { navigate } }) => (
         <Icon name="arrow-forward" />
       </Button>
     </Right>
+
   </ListItem>
 )
 
