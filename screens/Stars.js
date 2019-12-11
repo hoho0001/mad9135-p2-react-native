@@ -17,7 +17,7 @@ export default function Stars (props) {
                 iconSet={'Ionicons'}
                 maxStars={5}
                 rating={stars}
-                fullStarColor={'black'}
+                fullStarColor={'orange'}
                 starSize = {24}
 
             />

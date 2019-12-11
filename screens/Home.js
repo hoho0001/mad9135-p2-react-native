@@ -6,9 +6,22 @@ import { Container, Content, Spinner, Button, Text } from 'native-base'
 import BusinessListItem from '../components/BusinessListItem'
 
 export default function Home() {
+
+
+
+
+
+
   const [businessList, setBusinessList] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [where, setWhere] = useState({})
+  const [error, setError] = useState("")
+  
+
+  
+
+
+  
   
   // lat: 37.786882, lng:-122.399972
   const loadLocation = () => {
@@ -79,7 +92,7 @@ export default function Home() {
   return (
     <Container>
       <Content>
-        <Button  style={{marginTop: 24, marginBottom: 24, backgroundColor: "blue", alignSelf: 'center', alignItems: 'center'}} onPress={() => {
+        <Button  style={{marginTop: 24, marginBottom: 24, backgroundColor: "red", alignSelf: 'center', alignItems: 'center'}} onPress={() => {
           
           setIsLoading(true)
           loadData()

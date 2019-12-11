@@ -5,6 +5,8 @@ import {Image} from 'react-native'
 
 // Destructure the business object and the navigate function from props.
 const BusinessListItem = ({ business, navigation: { navigate } }) => (
+
+  
   
   <ListItem avatar> 
         <Left>
@@ -14,7 +16,7 @@ const BusinessListItem = ({ business, navigation: { navigate } }) => (
     />
     </Left>
     <Body>
-      <Text style={{fontSize: 20}}>
+      <Text style={{fontSize: 16, padding: 8}}>
         {business.name}
       </Text>
       <Text style={{fontSize: 14, color: '#777'}}>
@@ -25,7 +27,7 @@ const BusinessListItem = ({ business, navigation: { navigate } }) => (
       <Button 
         transparent
         onPress={() => navigate('BusinessDetail', { business })} > 
-        <Icon name="arrow-forward" />
+        <Icon name="arrow-forward" style={{fontSize: 26, color:'red'}}/>
       </Button>
     </Right>
 

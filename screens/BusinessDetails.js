@@ -2,13 +2,23 @@ import React, { Component } from 'react'
 import { Container, Content, Text} from 'native-base'
 import { StyleSheet, Image} from 'react-native'
 import Stars from './Stars'
+import { HeaderTitle } from 'react-navigation-stack'
 
 
 
 export default class BusinessDetails extends Component {
   static navigationOptions = ({navigation}) => {
+    
     const { title } = navigation.getParam('business')
-    return { title }
+    return { title: title,
+    headerStyle: {backgroundColor: "red"},
+    headerTintColor: "white",
+    headerTitleStyle: {
+      fontWeight: "900",
+      fontSize: 40
+ 
+      }
+    }
   }
 
   render() {
@@ -44,7 +54,7 @@ export default class BusinessDetails extends Component {
 const s = StyleSheet.create({
 
   container: { flex: 1, padding: 24, fontSize: 20,backgroundColor: '#ffffff', color: '#000000', alignContent:"center" }, 
-  name: { fontSize: 30, fontWeight: '600', marginBottom:24, alignSelf: "center", color: 'blue'},
+  name: { fontSize: 30, fontWeight: '600', marginBottom:24, alignSelf: "center", color: 'red'},
   // phone: { marginTop: 12, color: 'white', marginBottom: 12 },
   address: { marginTop: 10, color:'#000', fontSize: 18, marginBottom:10, fontWeight: '600'  },
 

@@ -9,6 +9,7 @@ const AppNavigator = createStackNavigator({
     screen: Home,
     navigationOptions: { 
       title: 'The Business List',
+
     }
   },
   BusinessDetail: BusinessDetails
@@ -16,7 +17,9 @@ const AppNavigator = createStackNavigator({
    {
   initialRouteName: 'Home',
   defaultNavigationOptions: {
-    headerStyle: { backgroundColor: 'hsl(220, 60%, 90%)'}
+    headerStyle: { backgroundColor: 'red'},
+    headerTintColor: 'white',
+    headerTitleStyle: {}
   }
 })
 
